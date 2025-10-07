@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Huile d'Argan Pure",
+    "price": 120,
+    "image": "./data/assets/images/product-1.jpg",
+    "category": "Huile"
+  },
+  {
+    "id": 2,
+    "name": "Huile de Figue de Barbarie",
+    "price": 180,
+    "image": "./assets/images/product-2.jpg",
+    "category": "Huile "
+  },
+  {
+    "id": 3,
+    "name": "Huile d'Amlou",
+    "price": 150,
+    "image": "./assets/images/product-3.jpg",
+    "category": "Huile"
+  },
+  {
+    "id": 4,
+    "name": "Miel Naturel 1",
+    "price": 90,
+    "image": "./assets/images/miel-1.jpg",
+    "category": "Miel"
+  },
+  {
+    "id": 5,
+    "name": "Miel Naturel 2",
+    "price": 85,
+    "image": "./assets/images/miel-2.jpg",
+    "category": "Miel"
+  },
+  {
+    "id": 6,
+    "name": "Miel Naturel 3",
+    "price": 95,
+    "image": "./assets/images/miel-3.jpg",
+    "description": "Miel"
+  },
+  {
+    "id": 7,
+    "name": "Amandes Grillées",
+    "price": 70,
+    "image": "./assets/images/louz.jpg",
+    "description": "Graines"
+  },
+  {
+    "id": 8,
+    "name": "Graines de Chia",
+    "price": 60,
+    "image": "./assets/images/chia.jpg",
+    "category": "Graines"
+  },
+  {
+    "id": 9,
+    "name": "Pistaches Naturelles",
+    "price": 110,
+    "image": "./assets/images/pistach.jpg",
+    "category": "Graines"
+  }
+]
+
