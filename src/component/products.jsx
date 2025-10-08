@@ -1,6 +1,6 @@
 import myproducts from '../data/products.json'
 
-function CardsLits() {
+function CardsLists() {
   return (
     <section className="flex flex-wrap max-w-[90vw] mx-auto lg:justify-between gap-y-[2rem] mb-[4rem]">
       {myproducts.map((product) => {
@@ -24,7 +24,7 @@ function Card(props) {
       <p className=" italic mb-[0.7rem] text-[#8a8484]">{category}</p>
       <h3 className="mb-[0.7rem] font-semibold text-[1.4rem]">{name}</h3>
 
-      <aside className=" lg:flex lg:justify-between lg:items-center text-[#088178] ">
+      <aside className=" lg:flex mb-[0.6rem] lg:justify-between lg:items-center text-[#088178] ">
         <p className="prix italic font-bold">{price} MAD</p>
         <button className="bg-[#088178] hover:bg-[#cdd95f] hover:text-black hover:font-semibold hover:transition-all hover:ease-linear hover:duration-300 text-[white] px-[1rem] py-[0.3rem] rounded-[0.5rem] cursor-pointer">
           Add to Cart
@@ -34,4 +34,7 @@ function Card(props) {
   );
 }
 
-export default CardsLits;
+export default CardsLists;
+
+
+ 
