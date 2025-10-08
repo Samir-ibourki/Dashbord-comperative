@@ -2,12 +2,12 @@
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 export default function Header() {
     return (
-        <header className='bg-[#9c9] '>
+        <section className='bg-[#cdd95f] mb-[1rem]'>
         
            <header className='max-w-[90vw] mx-auto flex justify-between items-center py-[1rem] '>
 
-            <div className='italic tracking-[0.2rem]'>
-                <span>ElGHOUSNI</span> Comperative
+            <div className='italic text-[1rem] tracking-[0.2rem] font-extrabold'>
+                <span className="text-[#e3e0b8]">ElGHOUSNI</span> Comperative
                 </div>
 
 <marquee className='w-[25rem]' behavior="" direction="left">Sign up and GET 25% OFF for your first order</marquee>
@@ -27,7 +27,7 @@ export default function Header() {
 
             </div>
            </header>
-           </header>
+           </section>
     )
 }
 

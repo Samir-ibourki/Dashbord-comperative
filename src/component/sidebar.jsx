@@ -3,18 +3,25 @@ export default function SideBar() {
     return (
         <>
 
-        <section className="bg-[#969737] h-[94.5vh] w-[20%] decoration-none">
-
-            <div className="flex flex-col gap-[1rem] items-center ">
-              <a className="bg-[#eee] w-[90%] hover:bg-[black] rounded-[0.4rem] p-[0.4rem] text-center mt-[1rem] cursor-pointer text-[black] hover:text-[white] no-underline" href="">shop</a>
-              <a className="bg-[#eee] w-[90%] hover:bg-[black] rounded-[0.4rem] p-[0.4rem] text-center mt-[1rem] cursor-pointer text-[black] hover:text-[white] no-underline" href="">checkout</a>
-              <a className="bg-[#eee] w-[90%] hover:bg-[black] rounded-[0.4rem] p-[0.4rem] text-center mt-[1rem] cursor-pointer text-[black] hover:text-[white] no-underline" href="">add to cart</a>
-                
-                
-                
-            </div>
-
-</section>
+<div className=" p-2 w-full">
+        <h2 class="text-2xl mb-3 font-semibold ">Filters</h2>
+        <h3 class="text-2xl mb-4">Category :</h3>
+        <div id="filters-container" className="text-xl space-y-3">
+          <div className="space-x-2">
+            <input type="checkbox" className="check" id="huile" />
+            <label for="huile">Huile</label>
+          </div>
+          <div className="space-x-2">
+            <input type="checkbox" className="check" id="miel" />
+            <label for="miel">Miel</label>
+          </div>
+          <div className="space-x-2">
+            <input type="checkbox" className="check" id="graines" />
+            <label for="graines">Graines</label>
+          </div>
+        </div>
+      </div>
+       
         </>
 
 
