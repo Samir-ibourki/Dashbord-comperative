@@ -2,9 +2,8 @@
 
 export default function Commande(){
 return(
-    <section className="mb-8"> 
-        <h1 className="text-[1.7rem] mb-4 font-somibold ">New Commande</h1>
-        <main className="bg-[#eee] py-7 w-[20%] flex flex-col gap-[1.3rem] shadow-xl ">
+    <section className="mb-8 w-[100%] lg:w-[40%]">
+        <main className="bg-[#eee] py-7 flex flex-col gap-[1.3rem] shadow-xl ">
 <div className="flex justify-around">
     <label htmlFor="Name">FullName</label>
     <input className="border border-[black] rounded-md border-solid  py-1 px-2 outline-none" type="text" />
@@ -15,13 +14,18 @@ return(
 </div>
 <div className="flex justify-around">
     <label htmlFor="Produit">Produit</label>
-
+ <select id="statusFilter" class="border rounded px-3 py-1 w-auto">
+    <option value="Huile">Huile</option>
+    <option value="Miel">Miel</option>
+    <option value="Graines">Graines</option>
+    
+  </select>
 </div>
-<div className="flex justify-around">
+<div className="flex justify-around mb-6">
     <label htmlFor="Quantity">Quantity</label>
-    <input className="border border-[black] rounded-md border-solid  py-1 px-2 outline-none" type="number" value={1} />
+    <input className="border border-[black] rounded-md border-solid  py-1 px-2 outline-none" type="number" placeholder="1" />
 </div>
-<button className="bg-[#088178] text-white font-semibold py-2 w-[30%] mx-auto rounded-md cursor-pointer shadow-lg ">Add To Cart</button>
+<button className="bg-[#088178] text-white font-semibold py-2 w-[30%] mx-auto rounded-md cursor-pointer shadow-lg ">Buy now</button>
         </main>
     </section>
 )

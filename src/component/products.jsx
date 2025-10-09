@@ -27,7 +27,7 @@ function Card(props) {
       <aside className=" lg:flex mb-[0.6rem] lg:justify-between lg:items-center text-[#088178] ">
         <p className="prix italic font-bold">{price} MAD</p>
         <button className="bg-[#088178] hover:bg-[#cdd95f] hover:text-black hover:font-semibold hover:transition-all hover:ease-linear hover:duration-300 text-[white] px-[1rem] py-[0.3rem] rounded-[0.5rem] cursor-pointer">
-          Add to Cart
+          <a href="#Checkout">Add to Cart</a>
         </button>
       </aside>
     </div>

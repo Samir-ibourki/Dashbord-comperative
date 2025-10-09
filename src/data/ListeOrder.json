@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "client": "Ahmed B.",
+    "phone": "0612345678",
+    "products": [
+      { "name": "Huile d'olive 1L", "quantity": 2 },
+      { "name": "Miel naturel", "quantity": 1 }
+    ],
+    "total": 230,
+    "status": "En attente"
+  },
+  {
+    "id": 2,
+    "client": "Fatima L.",
+    "phone": "0678123456",
+    "products": [{ "name": "Savon à l'huile d'olive", "quantity": 3 }],
+    "total": 90,
+    "status": "Livrée"
+  }
+]
