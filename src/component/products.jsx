@@ -12,6 +12,7 @@ function CardsLists() {
 
 function Card(props) {
   const { image, price, name, category } = props;
+
   return (
     <div className="border-solid border-[0.1rem] rounded-[0.5rem] p-[0.8rem] shadow-md hover:shadow-xl hover:transition-all hover:ease-linear cursor-pointer w-[30%]">
       <span className="mx-[auto]">
