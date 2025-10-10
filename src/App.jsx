@@ -23,17 +23,15 @@
 //           <Commande />
 //           <ResumeCommande />
 //         </div>
-      
+
 //           <ListesCommandes />
-        
+
 //       </section>
 //   </>
 //   );
 // }
 
 // export default App;
-
-
 
 import { Routes, Route } from "react-router-dom";
 import Header from "./component/Header";
@@ -47,7 +45,6 @@ export default function App() {
   return (
     <>
       <Header />
-
       <Routes>
         <Route
           path="/"
@@ -57,19 +54,18 @@ export default function App() {
               <CardsLits />
             </section>
           }
-            />
+        />
 
         <Route
           path="/checkout"
           element={
-          <>
-          <h1 className="text-[1.7rem] mb-4 font-somibold text-center ">New et Resume du Commande</h1>
-         
+            <>
+              <h1 className="text-[1.7rem] mb-4 font-somibold text-center ">
+                New et Resume du Commande
+              </h1>
+
               <Commande />
-             
-            
-          </>
-            
+            </>
           }
         />
 
