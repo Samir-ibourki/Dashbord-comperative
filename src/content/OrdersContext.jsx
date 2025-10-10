@@ -5,7 +5,6 @@ export const OrdersContext = createContext();
 export function OrdersProvider({ children }) {
   const [orders, setOrders] = useState([]);
 
-
   const addOrder = (newOrder) => {
     setOrders((prevOrders) => [...prevOrders, newOrder]);
   };
@@ -16,4 +15,3 @@ export function OrdersProvider({ children }) {
     </OrdersContext.Provider>
   );
 }
-

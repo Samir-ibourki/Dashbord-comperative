@@ -1,7 +1,5 @@
-
- 
 export default function SideBar() {
- const categorys = ['Huile', 'Miel', 'Graines'];
+  const categorys = ["Huile", "Miel", "Graines"];
 
   return (
     <>
@@ -10,7 +8,6 @@ export default function SideBar() {
         <h3 className="text-2xl mb-4">Category :</h3>
         <div id="filters-container" className="text-xl space-y-3">
           {categorys.map((category) => {
-            
             return (
               <div className="space-x-2">
                 <input type="checkbox" value={category} />
@@ -23,7 +20,3 @@ export default function SideBar() {
     </>
   );
 }
-
-
-
-

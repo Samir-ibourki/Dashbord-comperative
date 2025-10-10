@@ -1,4 +1,4 @@
-import myproducts from '../data/products.json'
+import myproducts from "../data/products.json";
 
 function CardsLists() {
   return (
@@ -36,6 +36,3 @@ function Card(props) {
 }
 
 export default CardsLists;
-
-
- 
