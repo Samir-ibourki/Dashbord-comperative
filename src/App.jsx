@@ -40,7 +40,7 @@ import Header from "./component/Header";
 import SideBar from "./component/SideBar";
 import CardsLits from "./component/Products";
 import Commande from "./component/Commande";
-import ResumeCommande from "./component/ResumeCommande";
+
 import ListesCommandes from "./component/ListeCommande";
 
 export default function App() {
@@ -57,17 +57,17 @@ export default function App() {
               <CardsLits />
             </section>
           }
-        />
+            />
 
         <Route
           path="/checkout"
           element={
           <>
           <h1 className="text-[1.7rem] mb-4 font-somibold text-center ">New et Resume du Commande</h1>
-          <div className="flex justify-between max-w-[90vw] mx-auto my-5">
+         
               <Commande />
-              <ResumeCommande />
-            </div>
+             
+            
           </>
             
           }

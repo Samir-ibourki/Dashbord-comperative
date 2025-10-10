@@ -3,7 +3,7 @@ import myproducts from '../data/products.json'
 export default function Commande(){
    
 return(
-    <section className="mb-8 w-[100%] lg:w-[40%]">
+    <section className="mb-8 w-[50%] mx-auto">
         
         <main className="bg-[#eee] py-7 flex flex-col gap-[1.3rem] shadow-xl ">
 <div className="flex justify-around">
