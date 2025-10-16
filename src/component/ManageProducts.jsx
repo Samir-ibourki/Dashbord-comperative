@@ -1,12 +1,8 @@
-import { useState } from "react";
+
 import { useProductStore } from "../store/ProductStore";
 //import products from '../data/products.json'
 export default function ManageProducts() {
-  const { products, addProduct, deleteProduct } = useProductStore();
- 
-
-
-
+const { products, addProduct, deleteProduct} = useProductStore();
 
 return (
     <section className="p-6 max-w-4xl mx-auto">
