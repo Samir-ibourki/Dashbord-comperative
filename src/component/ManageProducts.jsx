@@ -1,7 +1,22 @@
+import { useState } from "react";
 import { useProductStore } from "../store/ProductStore";
-
+//import products from '../data/products.json'
 export default function ManageProducts() {
   const { products, addProduct, deleteProduct } = useProductStore();
+  const [name,setName] = useState()
+   const [prix,setPrix] = useState()
+  
+// function HundleInput(e) {
+//     e.preventDefault()
+//     return(
+//     <>
+//     <h2>{setName(name)}</h2>
+//     <h2>{setPrix(prix)}</h2>
+//     </>
+//     )
+// }
+
+
 
   return (
     <section className="p-6 max-w-4xl mx-auto">
@@ -10,11 +25,17 @@ export default function ManageProducts() {
       {/* Formulaire d’ajout */}
       <form onSubmit={(e) => {
         e.preventDefault();
-       
-        
-      }} className="flex gap-3 mb-6">
+        const newProd = {
+          id: Date.now(),
+          name: e.target.name.value,
+          price: e.target.price.value,
+        };
+        addProduct(newProd);
+        e.target.reset();
+      }}  className="flex gap-3 mb-6">
         <input name="name" placeholder="Nom produit" className="border p-2 rounded" />
         <input name="price" placeholder="Prix (MAD)" type="number" className="border p-2 rounded" />
+        
         <button className="bg-green-600 text-white px-4 rounded">Ajouter</button>
       </form>
 
