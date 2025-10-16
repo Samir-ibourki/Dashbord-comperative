@@ -1,7 +1,8 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { OrdersContext } from "../content/OrdersContext.jsx";
 
 export default function OrderList() {
+  // const [name, setName] = useState(false);
   const { orders } = useContext(OrdersContext);
 
   return (
@@ -37,6 +38,15 @@ export default function OrderList() {
           ))}
         </tbody>
       </table>
+
+      {/* <button
+        onClick={() => {
+          setName(!name);
+        }}
+      >
+        click
+      </button>
+      {name && <h2>hi i'm here</h2>} */}
     </section>
   );
 }

@@ -76,6 +76,7 @@
 //         </button>
 //       </form>
 //     </section>
+
 //   );
 // }
 
@@ -108,8 +109,8 @@ export default function Commande() {
       status: "En attente",
     };
 
-    addOrder(newOrder); // 🟢 نضيف الطلب للكونتكست
-    navigate("/orders"); // 🔁 نمشيو للصفحة ديال الطلبات
+    addOrder(newOrder); 
+    navigate("/orders"); 
   };
 
   return (

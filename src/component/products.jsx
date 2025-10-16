@@ -1,11 +1,10 @@
+import { Link } from "react-router-dom";
 import myproducts from "../data/products.json";
 
 function CardsLists() {
   return (
     <section className="flex flex-wrap max-w-[90vw] mx-auto lg:justify-between gap-y-[2rem] mb-[4rem]">
-      {myproducts.map((product) => {
-        return <Card key={product.id} {...product} />;
-      })}
+      {myproducts.map((product) => <Card key={product.id} {...product} />)}
     </section>
   );
 }
@@ -28,7 +27,8 @@ function Card(props) {
       <aside className=" lg:flex mb-[0.6rem] lg:justify-between lg:items-center text-[#088178] ">
         <p className="prix italic font-bold">{price} MAD</p>
         <button className="bg-[#088178] hover:bg-[#cdd95f] hover:text-black hover:font-semibold hover:transition-all hover:ease-linear hover:duration-300 text-[white] px-[1rem] py-[0.3rem] rounded-[0.5rem] cursor-pointer">
-          <a href="Checkout">Add to Cart</a>
+         <a href="Checkout">Add to Cart</a> 
+          {/* <Link to='/checkout' >shiiik</Link> */}
         </button>
       </aside>
     </div>

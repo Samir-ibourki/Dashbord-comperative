@@ -5,6 +5,7 @@ import CardsLits from "./component/Products";
 import Commande from "./component/Commande";
 
 import ListesCommandes from "./component/ListeCommande";
+import ManageProducts from "./component/ManageProducts";
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
         />
 
         <Route path="/orders" element={<ListesCommandes />} />
+        <Route path="/admin/products" element={<ManageProducts />} />
       </Routes>
     </>
   );
