@@ -36,7 +36,7 @@
 // }
 
 // export default CardsLists;
-import { useProductStore } from "../store/ProductStore"; // ✅ جِيب store
+import { useProductStore } from "../store/ProductStore";
 import { Link } from "react-router-dom";
 
 function CardsLists() {
