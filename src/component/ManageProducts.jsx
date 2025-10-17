@@ -70,6 +70,42 @@ return (
           ))}
         </tbody>
       </table>
+      {editedProduct && (
+  <div className="mt-6 border-t pt-4">
+    <h2 className="text-xl mb-3 font-semibold">Modifier le produit</h2>
+    <div className="flex gap-3 items-center">
+      <input
+        type="text"
+        value={editedProduct.name}
+        onChange={(e) =>
+          setEditedProduct({ ...editedProduct, name: e.target.value })
+        }
+        className="border p-2 rounded"
+      />
+      <input
+        type="number"
+        value={editedProduct.price}
+        onChange={(e) =>
+          setEditedProduct({ ...editedProduct, price: +e.target.value })
+        }
+        className="border p-2 rounded w-24"
+      />
+      <button
+        onClick={handleSave}
+        className="bg-green-600 text-white px-4 py-2 rounded"
+      >
+        Enregistrer
+      </button>
+      <button
+        onClick={() => setEditedProduct(null)}
+        className="bg-gray-400 text-white px-4 py-2 rounded"
+      >
+        Annuler
+      </button>
+    </div>
+  </div>
+)}
+
     </section>
   );
 }

@@ -3,8 +3,11 @@ import products from '../data/products.json'
 export const useProductStore = create((set) => ({
   products: products,
 
-  addProduct: (newProduct) => set((state) => ({
-    products: [...state.products, newProduct]
+ updateProduct: (id, updatedData) =>
+  set((state) => ({
+    products: state.products.map((p) =>
+      p.id === id ? { ...p, ...updatedData } : p
+    ),
   })),
 
   deleteProduct: (id) => set((state) => ({
