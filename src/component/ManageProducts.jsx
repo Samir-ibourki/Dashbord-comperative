@@ -1,8 +1,21 @@
 
+import { useState } from "react";
 import { useProductStore } from "../store/ProductStore";
 //import products from '../data/products.json'
 export default function ManageProducts() {
-const { products, addProduct, deleteProduct} = useProductStore();
+const { products, addProduct, deleteProduct,updateProduct} = useProductStore();
+const [editedProduct, setEditedProduct] = useState(null);
+ const handleEdit = (product) => {
+    setEditedProduct(product);
+  };
+
+  const handleSave = () => {
+    updateProduct(editedProduct.id, {
+      name: editedProduct.name,
+      price: editedProduct.price,
+    });
+    setEditedProduct(null); // fermer le mode édition
+  };
 
 return (
     <section className="p-6 max-w-4xl mx-auto">
@@ -38,14 +51,21 @@ return (
             <tr key={p.id}>
               <td className="p-2 text-center">{p.name}</td>
               <td className="p-2 text-center">{p.price} MAD</td>
-              <td className="p-2 text-center">
-                <button
-                  onClick={() => deleteProduct(p.id)}
-                  className="bg-red-500 text-white px-3 rounded"
-                >
-                  Supprimer
-                </button>
-              </td>
+              <td className="p-2 text-center flex justify-center gap-2">
+  <button
+    onClick={() => handleEdit(p)}
+    className="bg-blue-500 text-white px-3 rounded"
+  >
+    Modifier
+  </button>
+  <button
+    onClick={() => deleteProduct(p.id)}
+    className="bg-red-500 text-white px-3 rounded"
+  >
+    Supprimer
+  </button>
+</td>
+
             </tr>
           ))}
         </tbody>
